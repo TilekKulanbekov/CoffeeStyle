@@ -352,9 +352,42 @@
 }
 
 @media (max-width: 560px) {
+    
     .updates{
+        &__subtitle {
+            top: calc(50% - 140px);
+        }
+        &__title {
+            font-size: 28px;
+            top: calc(50% - 110px);
+            left: 50%;
+            width: 200px;
+            transform: translate(calc(50% - 97.777777%));
+        }
         &__img{
             margin-bottom: 0;
+        }
+        .block {
+            margin: 0 auto;
+            position: relative;
+            input {
+                position: absolute;
+                padding: 20px 20px;
+                min-width: 232px;
+                width: 33%;
+                bottom: 140px;
+                left: 23.5%;
+                transform: translate(28px);
+            }
+            button {
+                position: absolute;
+                padding: 20px 20px;
+                min-width: 233px;
+                width: 33.22%;
+                bottom: 60px;
+                left: 21%;
+                transform: translate(28px);
+            }
         }
     }
     .footer {
