@@ -1,0 +1,406 @@
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+    .header {
+        .navbar {
+            justify-content: space-between;
+            .header-imgs {
+                right: 20px;
+            }
+        }
+    }
+    .bigcard {
+        .row {
+            flex-wrap: wrap;
+        }
+        &__img {
+            width: 324px;
+            height: 67%;
+            text-align: center;
+        }
+        &__price {
+            margin-bottom: 30px;
+        }
+    }
+    .smallcard {
+        margin: 0 auto;
+        .row {
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 324px;
+            margin-bottom: 16px;
+        }
+        &__img {
+            width: 324px;
+            height: 404px;
+            text-align: center;
+        }
+        .row3 {
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 324px;
+            margin-bottom: 16px;
+        }
+    }
+    .smallcard__price-grey {
+        margin: 0 5px 16px 0;
+    }
+    .magazine {
+        margin: 0;
+        .magazine__row {
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 324px;
+        }
+        &__img {
+            width: 324px;
+            margin-bottom: 3px;
+        }
+        &__img1 {
+            margin-bottom: 0;
+        }
+        .content .text {
+            margin: 0 auto;
+            width: 323px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .content .title {
+            margin: 0 auto;
+
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .content .desc {
+            margin: 0 auto;
+
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content .btn {
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+    }
+    .info {
+        .row {
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 324px;
+        }
+
+        &__img {
+            width: 324px;
+            height: 324px;
+            text-align: center;
+        }
+        &__title {
+            width: 324px;
+            text-align: center;
+        }
+        &__desc {
+            width: 324px;
+            text-align: center;
+        }
+        &__date {
+            margin-bottom: 100px;
+            text-align: center;
+        }
+    }
+    .bg .img {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+    .header {
+        .navbar {
+            display: none;
+        }
+    }
+    .home {
+        &__text1 {
+            top: 120px;
+        }
+        &__title {
+            top: 140px;
+        }
+        &__text2 {
+            top: 240px;
+        }
+        &__btn {
+            top: 330px;
+        }
+    }
+    .updates {
+        &__subtitle {
+            top: calc(50% - 180px);
+        }
+        &__title {
+            font-size: 28px;
+            top: calc(50% - 160px);
+            left: 50%;
+            width: 200px;
+            transform: translate(calc(50% - 97.777777%));
+        }
+        .block {
+            margin: 0 auto;
+            position: relative;
+            input {
+                position: absolute;
+                padding: 20px 20px;
+                width: 33%;
+                bottom: 250px;
+                left: 22.7%;
+            }
+            button {
+                position: absolute;
+                padding: 20px 20px;
+                width: 33.22%;
+                bottom: 180px;
+                left: 21%;
+            }
+        }
+    }
+    .footer {
+        .container{
+            position: relative;
+            width: 500px;
+            height: 400px;
+            margin: 0;
+        }
+        .row1{
+            position: absolute;
+            top: 0;
+            left: 16%;
+        }
+        .row4{
+            position: absolute;
+            top: 0;
+            left: 70%;
+        }
+        .row3{
+            position: absolute;
+            top: 170px;
+            left: 70%;
+        }
+        .row2{
+            position: absolute;
+            top: 170px;
+            left: 8%;
+        }
+        &__list_item{
+            margin-bottom: 0;
+        }
+        &__list_item1{
+            margin-bottom: 24px;
+        }
+        &__email{
+            margin-bottom: 28px;
+            font-size: 22px;
+        }
+        &__desc{
+            margin-bottom: 40px;
+        }
+        &__copyright{
+            margin-bottom: 0;
+        }
+
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 375px;
+    }
+    .home {
+        &__img {
+            height: 400px;
+            max-width: calc(100% - 40px);
+            padding: 0 20px 40px 20px;
+        }
+        &__text1 {
+            font-size: 14px;
+            top: 50px;
+            left: 53%;
+            width: 250px;
+        }
+        &__title {
+            font-size: 30px;
+            top: 80px;
+        }
+        &__text2 {
+            font-size: 14px;
+            top: 130px;
+            width: 270px;
+        }
+        &__btn {
+            top: 230px;
+            width: 220px;
+            font-size: 10px;
+            background-color: #ffff;
+        }
+    }
+    .about {
+        &__title {
+            font-size: 20px;
+        }
+        &__read {
+            margin-bottom: 100px;
+            &::after {
+                top: 900px;
+            }
+        }
+    }
+    .updates {
+        &__subtitle {
+            top: calc(50% - 180px);
+        }
+        &__title {
+            font-size: 28px;
+            top: calc(50% - 160px);
+            left: 50%;
+            width: 200px;
+            transform: translate(calc(50% - 97.777777%));
+        }
+        .block {
+            margin: 0 auto;
+            position: relative;
+            input {
+                position: absolute;
+                padding: 20px 20px;
+                min-width: 232px;
+                width: 33%;
+                bottom: 250px;
+                left: 22.7%;
+                transform: translate(28px);
+            }
+            button {
+                position: absolute;
+                padding: 20px 20px;
+                min-width: 230px;
+                width: 33.22%;
+                bottom: 180px;
+                left: 21%;
+                transform: translate(28px);
+            }
+        }
+    }
+    .bigcard {
+        .subtitle {
+            margin-bottom: 70px;
+        }
+    }
+    .magazine {
+        .subtitle {
+            margin-top: 40px;
+            margin-bottom: 70px;
+        }
+        .content {
+            .btn {
+                margin-bottom: 60px;
+            }
+        }
+    }
+    .footer {
+        .container{
+            position: relative;
+            width: 500px;
+            height: 350px;
+            margin: 0;
+        }
+        .row1{
+            position: absolute;
+            top: 0;
+            left: 60px;
+        }
+        .row4{
+            position: absolute;
+            top: 0;
+            left: 310px;
+        }
+        .row3{
+            position: absolute;
+            top: 170px;
+            left: 310px;
+        }
+        .row2{
+            position: absolute;
+            top: 170px;
+            left: 20px;
+        }
+        &__list_item{
+            margin-bottom: 0;
+        }
+        &__list_item1{
+            margin-bottom: 24px;
+        }
+        &__email{
+            margin-bottom: 28px;
+            font-size: 22px;
+        }
+        &__desc{
+            margin-bottom: 40px;
+        }
+        &__copyright{
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+@media (max-width: 560px) {
+    .updates{
+        &__img{
+            margin-bottom: 0;
+        }
+    }
+    .footer {
+        .container{
+            position: relative;
+            width: auto;
+            height: 350px;
+            margin: 0;
+        }
+        .row1{
+            position: absolute;
+            top: 0;
+            left: 40px;
+        }
+        .row4{
+            position: absolute;
+            top: 150px;
+            left: 0;
+        }
+        .row3{
+            position: absolute;
+            top: 270px;
+            left: 180px;
+        }
+        .row2{
+            position: absolute;
+            top: 270px;
+            left: 0;
+        }
+        &__list_item{
+            margin-bottom: 0;
+        }
+        &__list_item1{
+            margin-bottom: 0;
+        }
+        &__email{
+            margin-bottom: 0;
+            font-size: 22px;
+        }
+        &__desc{
+            margin-bottom: 0;
+            width: auto;
+        }
+        &__copyright{
+            margin-bottom: 0;
+        }
+
+    }
+}

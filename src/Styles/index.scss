@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+    box-sizing:inherit;
+}
+body {
+    font-family: 'Karla', sans-serif;
+    margin:0;
+    padding:0;
+    border: 0;
+    text-decoration: none;
+    ul li {
+        list-style: none;
+    }
+}
+
+@import './variables';
+@import './header';
+@import './home';
+@import './about';
+@import './bigcard';
+@import './smallcard';
+@import './magazine';
+@import './bg';
+@import './info';
+@import './updates';
+@import './footer';
+@import './media';

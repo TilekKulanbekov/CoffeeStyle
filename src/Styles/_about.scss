@@ -1,0 +1,35 @@
+.about{
+    &__title{
+        text-align: center;
+        font-size: 28px;
+        font-weight: normal;
+        color: #1D1F2E;
+    }
+    &__desc{
+        width: 68%;
+        transform: translate(22%);
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: rgba(29, 31, 46, 0.7);
+    }
+    &__read{
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+        color: #A25F4B;
+        margin-bottom: 120px;
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 133px;
+            height: 2px;
+            top: 950px;
+            left: calc(50% - 133px/2);
+            background: rgba(162, 95, 75, 0.3);
+        }
+    }
+}
