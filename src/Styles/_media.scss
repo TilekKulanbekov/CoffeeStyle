@@ -117,6 +117,10 @@
         max-width: 576px;
     }
     .header {
+        .open-btn {
+            display: block;
+            z-index: 100;
+        }
         .navbar {
             display: none;
         }
@@ -166,49 +170,48 @@
         }
     }
     .footer {
-        .container{
+        .container {
             position: relative;
             width: 500px;
             height: 400px;
             margin: 0;
         }
-        .row1{
+        .row1 {
             position: absolute;
             top: 0;
             left: 16%;
         }
-        .row4{
+        .row4 {
             position: absolute;
             top: 0;
             left: 70%;
         }
-        .row3{
+        .row3 {
             position: absolute;
             top: 170px;
             left: 70%;
         }
-        .row2{
+        .row2 {
             position: absolute;
             top: 170px;
             left: 8%;
         }
-        &__list_item{
+        &__list_item {
             margin-bottom: 0;
         }
-        &__list_item1{
+        &__list_item1 {
             margin-bottom: 24px;
         }
-        &__email{
+        &__email {
             margin-bottom: 28px;
             font-size: 22px;
         }
-        &__desc{
+        &__desc {
             margin-bottom: 40px;
         }
-        &__copyright{
+        &__copyright {
             margin-bottom: 0;
         }
-
     }
 }
 @media (max-width: 576px) {
@@ -305,55 +308,53 @@
         }
     }
     .footer {
-        .container{
+        .container {
             position: relative;
             width: 500px;
             height: 350px;
             margin: 0;
         }
-        .row1{
+        .row1 {
             position: absolute;
             top: 0;
             left: 60px;
         }
-        .row4{
+        .row4 {
             position: absolute;
             top: 0;
             left: 310px;
         }
-        .row3{
+        .row3 {
             position: absolute;
             top: 170px;
             left: 310px;
         }
-        .row2{
+        .row2 {
             position: absolute;
             top: 170px;
             left: 20px;
         }
-        &__list_item{
+        &__list_item {
             margin-bottom: 0;
         }
-        &__list_item1{
+        &__list_item1 {
             margin-bottom: 24px;
         }
-        &__email{
+        &__email {
             margin-bottom: 28px;
             font-size: 22px;
         }
-        &__desc{
+        &__desc {
             margin-bottom: 40px;
         }
-        &__copyright{
+        &__copyright {
             margin-bottom: 0;
         }
-
     }
 }
 
 @media (max-width: 560px) {
-    
-    .updates{
+    .updates {
         &__subtitle {
             top: calc(50% - 140px);
         }
@@ -364,7 +365,7 @@
             width: 200px;
             transform: translate(calc(50% - 97.777777%));
         }
-        &__img{
+        &__img {
             margin-bottom: 0;
         }
         .block {
@@ -390,50 +391,58 @@
             }
         }
     }
+    .carusel {
+        .bg {
+            margin-top: 60px;
+        }
+        .swiper__img {
+            border-radius: 0px;
+            width: auto;
+        }
+    }
     .footer {
-        .container{
+        .container {
             position: relative;
             width: auto;
             height: 350px;
             margin: 0;
         }
-        .row1{
+        .row1 {
             position: absolute;
             top: 0;
             left: 40px;
         }
-        .row4{
+        .row4 {
             position: absolute;
             top: 150px;
             left: 0;
         }
-        .row3{
+        .row3 {
             position: absolute;
             top: 270px;
             left: 180px;
         }
-        .row2{
+        .row2 {
             position: absolute;
             top: 270px;
             left: 0;
         }
-        &__list_item{
+        &__list_item {
             margin-bottom: 0;
         }
-        &__list_item1{
+        &__list_item1 {
             margin-bottom: 0;
         }
-        &__email{
+        &__email {
             margin-bottom: 0;
             font-size: 22px;
         }
-        &__desc{
+        &__desc {
             margin-bottom: 0;
             width: auto;
         }
-        &__copyright{
+        &__copyright {
             margin-bottom: 0;
         }
-
     }
 }

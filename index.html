@@ -7,11 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoffeeStile</title>
     <link rel="stylesheet" href="./src/Styles/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
-    <header class="header">
+    <div class="btn-up">
+        <a href="#header">
+          <img class="btn-up-img" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png" alt="">
+        </a>
+    </div>
+  <div id="burger" class="burger">
+    <button id="close-btn" class="close-btn">x</button>
+    <ul class="burger__menu">
+      <h2>Home</h2>
+      <li>
+        <a class="burger__link" href="#">Our Products</a>
+      </li>
+      <li>
+        <a class="burger__link" href="#">Blog</a>
+      </li>
+      <li>
+        <a class="burger__link" href="#">About</a>
+      </li>
+      <li>
+        <a class="burger__link" href="#">Contact</a>
+      </li>
+      <li>
+        <a id="photo" class="burger__link" href="#carousel">Styleguide</a>
+      </li>
+    </ul>
+  </div>
+    <header class="header" id="header"> 
         <div class="container">
+            <button id="open-btn" class="burger-btn open-btn">
+                <img class="open-btn_img"
+                  src="https://cdn3.iconfinder.com/data/icons/web-ui-3/128/Menu-2-512.png"
+                  alt=""
+                />
+              </button>
             <nav class="navbar">
                 <div class="navbar-logo">
                     <h3 href="">CoffeeStile.</h3>
@@ -191,7 +225,59 @@
             </div>
         </div>
     </section>
+    <section class="carusel" id="carousel">
+        <div class="bg">
+            <div class="carusel__caruselka">
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    <img
+                      class="swiper__img"
+                      src="./src/Images/smallcard/IMAGE1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img
+                      class="swiper__img"
+                      src="./src/Images/smallcard/IMAGE2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img
+                      class="swiper__img"
+                      src="./src/Images/smallcard/IMAGE3.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="./src/Lib/slick/slick.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          spaceBetween: 50,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        });
+      </script>
+      <script src="./src/js/app.js"></script>
 </body>
 <footer class="footer">
     <div class="container">
