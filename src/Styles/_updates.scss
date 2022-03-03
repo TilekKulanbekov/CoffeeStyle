@@ -3,6 +3,7 @@
     color: #FFFFFF;
     &__img{
         max-width: calc(100% - 60px);
+        width: 100%;
         transform: translate(calc(50% - 50%));
         height: 370px;
         padding: 0 30px 0 30px;
@@ -47,6 +48,7 @@
             padding: 19px 25px;
             margin-left: 10px;
             border: 0;
+            cursor: pointer;
         }
     }
 }

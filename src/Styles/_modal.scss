@@ -1,0 +1,135 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+        display: flex;
+    }
+
+    &-content{
+        width: 350px;
+        height: 450px;
+    }
+
+    &-header {
+        background: #fff;
+        height: 50px;
+        border-radius: 30px 30px 0 0;
+
+        a{
+            .header-logo {
+                font-size: 40px;
+                color: rgba(0, 0, 0, 0.8);
+                text-align: center;
+                padding: 0 0 10px 0;
+            }
+        }
+        
+    }
+
+    &-body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgba(6, 6, 40, 0.6);
+        gap: 30px;
+        font-family: 'Karla', sans-serif;
+
+        &__title{
+            margin-top: 20px;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        &__input {
+            max-width: 250px;
+            width: 100%;
+            border-radius: 30px;
+            min-height: 35px;
+            font-size: 14px;
+            padding-left: 20px;
+            color: #3b3b3b;
+            background-color: #FFFFFF;
+            border: 1px solid #a1a1a1;
+
+            &:active {
+                color: #adff2f;
+            }
+
+            &::placeholder {
+                color: #78808f;
+            }
+        }
+
+        &__btn {
+            position: relative;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+            background: #FFFFFF;
+            color: #78808f;
+            font-weight: normal;
+            width: 160px;
+            height: 40px;
+            border-radius: 30px;
+
+            &:hover {
+                top: 2px;
+                background: #333;
+            }
+            &:active {
+                color: #adff2f;
+            }
+        }
+
+        &__auth {
+            max-width: 335px;
+            width: calc((100% - 20%));
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 35px;
+            background: rgba(6, 6, 40, 1);
+            gap: 30px;
+            
+    
+            p {
+                font-size: 16px;
+                color: #ffffff;
+            }
+    
+            button {
+                font-size: 14px;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 996px;
+    }
+}

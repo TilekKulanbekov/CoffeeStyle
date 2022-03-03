@@ -1,15 +1,26 @@
-.container{
+.container {
     max-width: 940px;
     width: 100%;
     margin: 0 auto;
 }
 
-.subtitle{
+.modal-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
     font-weight: normal;
     font-size: 12px;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #1D1F2E;
+    color: #1d1f2e;
     margin-bottom: 100px;
 }
