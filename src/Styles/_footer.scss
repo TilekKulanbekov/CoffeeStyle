@@ -2,7 +2,7 @@
     .container {
         display: flex;
         justify-content: flex-start;
-        column-gap: 30px;
+        column-gap: 40px;
     }
 
     &__desc {
@@ -11,7 +11,7 @@
         line-height: 22px;
         color: rgba(29, 31, 46, 0.7);
         width: 258px;
-        margin-bottom: 80px;
+        margin: 20px 0 80px 0;
     }
     &__copyright {
         font-weight: normal;
@@ -28,6 +28,7 @@
         text-transform: uppercase;
         color: #1d1f2e;
         margin-bottom: 23px;
+        cursor: pointer;
     }
     &__list_item {
         font-weight: normal;
@@ -35,6 +36,7 @@
         line-height: 22px;
         color: rgba(29, 31, 46, 0.7);
         margin-bottom: 10px;
+        cursor: pointer;
     }
     &__email {
         font-weight: normal;
@@ -42,5 +44,9 @@
         line-height: 36px;
         color: #1d1f2e;
         margin-bottom: 60px;
+        cursor: pointer;
     }
+}.footer.basket-footer{
+    background: #dbdbde;
+    padding: 50px;
 }

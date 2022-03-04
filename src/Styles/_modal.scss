@@ -5,7 +5,7 @@
     height: 100vh;
     width: 100vw;
     z-index: 11;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     display: none;
     justify-content: center;
     align-items: center;
@@ -14,9 +14,11 @@
         display: flex;
     }
 
-    &-content{
+    &-content {
         width: 350px;
         height: 450px;
+        animation-name: modalopen;
+        animation-duration: 3s;
     }
 
     &-header {
@@ -24,7 +26,7 @@
         height: 50px;
         border-radius: 30px 30px 0 0;
 
-        a{
+        a {
             .header-logo {
                 font-size: 40px;
                 color: rgba(0, 0, 0, 0.8);
@@ -32,7 +34,6 @@
                 padding: 0 0 10px 0;
             }
         }
-        
     }
 
     &-body {
@@ -45,9 +46,9 @@
         text-align: center;
         background-color: rgba(6, 6, 40, 0.6);
         gap: 30px;
-        font-family: 'Karla', sans-serif;
+        font-family: "Karla", sans-serif;
 
-        &__title{
+        &__title {
             margin-top: 20px;
             letter-spacing: 2px;
             color: #fff;
@@ -61,7 +62,7 @@
             font-size: 14px;
             padding-left: 20px;
             color: #3b3b3b;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
             border: 1px solid #a1a1a1;
 
             &:active {
@@ -78,7 +79,7 @@
             font-size: 14px;
             text-align: center;
             cursor: pointer;
-            background: #FFFFFF;
+            background: #ffffff;
             color: #78808f;
             font-weight: normal;
             width: 160px;
@@ -103,13 +104,12 @@
             padding: 25px 35px;
             background: rgba(6, 6, 40, 1);
             gap: 30px;
-            
-    
+
             p {
                 font-size: 16px;
                 color: #ffffff;
             }
-    
+
             button {
                 font-size: 14px;
                 color: #ffffff;

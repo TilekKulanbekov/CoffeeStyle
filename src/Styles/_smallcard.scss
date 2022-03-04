@@ -13,6 +13,11 @@
         font-size: 20px;
         text-align: center;
         color: #1D1F2E;
+        margin: 10px;
+        cursor: pointer;
+        &:active{
+            background: #3b3b3b;
+        }
     }
     &__price{
         font-weight: normal;

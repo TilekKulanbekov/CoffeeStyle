@@ -5,6 +5,9 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-around;
+        &-logo{
+            cursor: pointer;
+        }
         &-nav{
             display: flex;
             justify-content: center;
@@ -36,16 +39,22 @@ header{
             }
             &__first{
                 position: absolute;
-                top:-2px;
-                right: 43px;
+                top: -1px;
+                right: 45px;
+                width: 20px;
                 cursor: pointer;
             }
             &__second{
                 position: absolute;
+                width: 16px;
                 top: 0px;
                 right: -28px;
                 cursor: pointer;
             }
         }
     }
+}
+
+.header.basket-header{
+    background: #dbdbde;
 }

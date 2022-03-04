@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoffeeStile</title>
     <link rel="stylesheet" href="./src/Styles/index.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -17,23 +16,19 @@
         </a>
     </div>
     <div id="burger" class="burger">
-        <button id="close-btn" class="close-btn">x</button>
         <ul class="burger__menu">
             <h2>CoffeeStyle</h2>
             <li>
-                <a class="burger__link" href="#">Our Products</a>
+                <a class="burger__link" href="index.html">Home</a>
             </li>
             <li>
-                <a class="burger__link" href="#">Blog</a>
+                <a class="burger__link" href="basket.html">Basket</a>
             </li>
             <li>
-                <a class="burger__link" href="#">About</a>
+                <a class="burger__link" href="smallcard.html">Our Products</a>
             </li>
             <li>
-                <a class="burger__link" href="#">Contact</a>
-            </li>
-            <li>
-                <a id="photo" class="burger__link" href="#carousel">Styleguide</a>
+                <a class="burger__link" href="#footer">Contact</a>
             </li>
         </ul>
     </div>
@@ -46,33 +41,38 @@
                 </button>
                 <nav class="navbar">
                     <div class="navbar-logo">
-                        <h3 href="">CoffeeStile.</h3>
+                        <a href="index.html">
+                            <h3 href="">CoffeeStile.</h3>
+                        </a>
                     </div>
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Our Products</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Styleguide</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="smallcard.html" class="nav-link">Our Products</a></li>
+                        <li class="nav-item"><a href="#magazine" class="nav-link">magazine</a></li>
+                        <li class="nav-item"><a href="#info" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#updates" class="nav-link">hits</a></li>
+                        <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
                     </ul>
                     <div class="header-imgs">
-                        <img class="header-imgs__first" src="./src/Images/header/shop.svg" alt="">
-                        <p href="">Cart</p>
-                        <img class="header-imgs__second" src="./src/Images/header/zero.svg" alt="">
+                        <a href="basket.html"><img class="header-imgs__first" src="./src/Images/header/shop.svg"
+                                alt=""></a>
+                        <a href="#bigcard">
+                            <p href="">Cart</p>
+                        </a>
+                        <img id="modalBtn" class="header-imgs__second" src="./src/Images/header/user.svg" alt="">
                     </div>
 
                 </nav>
             </div>
             <div>
-                <div class="home">
+                <div class="home" id="home">
                     <img class="home__img" src="./src/Images/home/bg.png" alt="bg">
                     <p class="home__text1">Best place to buy design</p>
                     <h1 class="home__title">Coffee Mugs</h1>
                     <p class="home__text2">The most versatile furniture system ever created. Designed to fit your life,
                         made
                         to move and grow.</p>
-                    <button class="home__btn">Explore Our Products</button>
+                    <a href="smallcard.html"><button class="home__btn">Explore Our Products</button></a>
                 </div>
             </div>
         </header>
@@ -91,7 +91,7 @@
                 <p class="about__read">Read the full Story</p>
             </div>
         </section>
-        <section class="bigcard">
+        <section class="bigcard" id="bigcard">
             <div class="container">
                 <p class="subtitle">Featured Mugs</p>
                 <div class="row">
@@ -108,63 +108,7 @@
                 </div>
             </div>
         </section>
-        <section class="smallcard">
-            <p class="subtitle">More Products</p>
-            <div class="container">
-                <div class="row">
-                    <div class="wrapper">
-                        <img class="smallcard__img" src="./src/Images/smallcard/IMAGE1.png" alt="coffe1">
-                        <p class="smallcard__name">Red Love Cup</p>
-                        <p class="smallcard__price">$25.00 <span>$ 37.00 USD</span></p>
-                    </div>
-                    <div class="wrapper">
-                        <img class="smallcard__img" src="./src/Images/smallcard/IMAGE2.png" alt="coffe2">
-                        <p class="smallcard__name">Black Tea Cup</p>
-                        <p class="smallcard__price">$15.00 <span>$ $ 29.00 USD</span></p>
-                    </div>
-                    <div class="wrapper">
-                        <img class="smallcard__img" src="./src/Images/smallcard/IMAGE3.png" alt="coffe3">
-                        <p class="smallcard__name">B&W Essentials Mug</p>
-                        <p class="smallcard__price-grey">$ 19.00 USD</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="wrapper">
-                        <img class="smallcard__img" src="./src/Images/smallcard/IMAGE4.png" alt="coffe4">
-                        <p class="smallcard__name">Winter Style Mug</p>
-                        <p class="smallcard__price-grey">$25.00 </p>
-                    </div>
-                    <div class="wrapper">
-                        <img class="smallcard__img" src="./src/Images/smallcard/IMAGE5.png" alt="coffe5">
-                        <p class="smallcard__name">Ceramic Tea</p>
-                        <p class="smallcard__price-grey">$ 46.00 USD</p>
-                    </div>
-                    <div class="wrapper">
-                        <img class="smallcard__img" src="./src/Images/smallcard/IMAGE6.png" alt="coffe6">
-                        <p class="smallcard__name">No Handle Bar Cup</p>
-                        <p class="smallcard__price-grey">$ 34.00 USD</p>
-                    </div>
-                </div>
-                <div class="row3">
-                    <div class="wrapper">
-                        <img class="smallcard__img" src="./src/Images/smallcard/IMAGE7.png" alt="coffe7">
-                        <p class="smallcard__name">Espresso Cup by Mugs.co</p>
-                        <p class="smallcard__price-grey">$ 25.00 USD</p>
-                    </div>
-                    <div class="wrapper">
-                        <img class="smallcard__img" src="./src/Images/smallcard/IMAGE8.png" alt="coffe8">
-                        <p class="smallcard__name">Pink Premium Ceramic</p>
-                        <p class="smallcard__price-grey">$ 99.00 USD</p>
-                    </div>
-                    <div class="wrapper">
-                        <img class="smallcard__img" src="./src/Images/smallcard/IMAGE9.png" alt="coffe9">
-                        <p class="smallcard__name">Summer Designer Cup</p>
-                        <p class="smallcard__price-grey">$ 29.00 USD</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="magazine">
+        <section class="magazine" id="magazine">
             <div class="container">
                 <p class="subtitle">Buy 2 mugs and get a coffee magazine free</p>
                 <div class="magazine__row">
@@ -185,7 +129,7 @@
         <section class="bg">
             <img class="img" src="./src/Images/bg.png" alt="bg2">
         </section>
-        <section class="info">
+        <section class="info" id="info">
             <div class="container">
                 <p class="subtitle">Behind the mugs, lifestyle stories</p>
                 <div class="row">
@@ -216,7 +160,7 @@
                 </div>
             </div>
         </section>
-        <section class="updates">
+        <section class="updates" id="updates">
             <div>
                 <img class="updates__img" src="./src/Images/updates/bg.png" alt="bg">
             </div>
@@ -225,36 +169,56 @@
                 <h3 class="updates__title">Coffee Updates</h3>
                 <div class="block">
                     <input type="text" placeholder="customer@coffeestyle.io">
-                    <button id="modalBtn">subscribe</button>
+                    <button id="modalBtn2">subscribe</button>
                 </div>
             </div>
         </section>
-        <section class="carusel" id="carousel">
-            <div class="bg">
-                <div class="carusel__caruselka">
-                </div>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div>
-                                <img class="swiper__img" src="./src/Images/smallcard/IMAGE1.png" alt="" />
-                            </div>
+        <section class="carusel">
+            <div class="container">
+
+                <div class="slider">
+                    <div class="slider-slides">
+
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <div class="slider-slide first">
+                            <img src="./src/Images/carusel/1.png" alt="1">
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img class="swiper__img" src="./src/Images/smallcard/IMAGE2.png" alt="" />
-                            </div>
+                        <div class="slider-slide">
+                            <img src="./src/Images/carusel/2.png" alt="2">
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img class="swiper__img" src="./src/Images/smallcard/IMAGE3.png" alt="" />
-                            </div>
+                        <div class="slider-slide">
+                            <img src="./src/Images/carusel/3.png" alt="3">
                         </div>
+                        <div class="slider-slide">
+                            <img src="./src/Images/carusel/4.png" alt="4">
+                        </div>
+
+                        <div class="slider-navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+       
                     </div>
+
+                    <div class="slider-navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+    
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- registraion  -->
     <div id="modal-registration" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -298,70 +262,68 @@
             </div>
         </div>
     </div>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row1">
+                <div class="wrapper">
+                    <h3 class="footer__title">CoffeeStyle.</h3>
+                    <p class="footer__desc">Delivering the best coffee life since 1996. From coffee geeks to the real
+                        ones.
+                    </p>
+                    <p class="footer__copyright">CoffeeStyle Inc. © 1996</p>
+                </div>
+            </div>
+            <div class="row2">
+                <div>
+                    <ul class="footer__list">
+                        <div class="footer__list_item1">Menu</div>
+                        <div class="footer__list_item">Home</div>
+                        <div class="footer__list_item">Our Products</div>
+                        <div class="footer__list_item">About</div>
+                        <div class="footer__list_item">Contact</div>
+                        <div class="footer__list_item">Styleguide</div>
+                    </ul>
+                </div>
+            </div>
+            <div class="row3">
+                <div>
+                    <ul class="footer__list">
+                        <div class="footer__list_item1">Follow Us</div>
+                        <a href="https://www.facebook.com/thegoodcoffeekg/">
+                            <div class="footer__list_item">Facebook</div>
+                        </a>
+                        <a href="https://www.instagram.com/socialcoffee.bishkek/">
+                            <div class="footer__list_item">Instagram</div>
+                        </a>
+                        <div class="footer__list_item">Pinterest</div>
+                        <div class="footer__list_item">Twitter</div>
+                    </ul>
+                </div>
+            </div>
+            <div class="row4">
+                <div>
+                    <ul class="footer__list">
+                        <div class="footer__list_item1">Contact Us</div>
+                        <div class="footer__list_item">We’re Always Happy to Help</div>
+                        <div class="footer__email">us@coffeestyle.io</div>
+                        <div class="footer__copyright">Powered by Webflow</div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./src/Lib/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            spaceBetween: 50,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-        });
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
     </script>
-    <script src="./src/js/app.js"></script>
+     <script src="./src/js/app.js"></script>
 </body>
-
-<footer class="footer">
-    <div class="container">
-        <div class="row1">
-            <div class="wrapper">
-                <h3 class="footer__title">CoffeeStyle.</h3>
-                <p class="footer__desc">Delivering the best coffee life since 1996. From coffee geeks to the real ones.
-                </p>
-                <p class="footer__copyright">CoffeeStyle Inc. © 1996</p>
-            </div>
-        </div>
-        <div class="row2">
-            <div>
-                <ul class="footer__list">
-                    <div class="footer__list_item1">Menu</div>
-                    <div class="footer__list_item">Home</div>
-                    <div class="footer__list_item">Our Products</div>
-                    <div class="footer__list_item">About</div>
-                    <div class="footer__list_item">Contact</div>
-                    <div class="footer__list_item">Styleguide</div>
-                </ul>
-            </div>
-        </div>
-        <div class="row3">
-            <div>
-                <ul class="footer__list">
-                    <div class="footer__list_item1">Follow Us</div>
-                    <div class="footer__list_item">Facebook</div>
-                    <div class="footer__list_item">Instagram</div>
-                    <div class="footer__list_item">Pinterest</div>
-                    <div class="footer__list_item">Twitter</div>
-                </ul>
-            </div>
-        </div>
-        <div class="row4">
-            <div>
-                <ul class="footer__list">
-                    <div class="footer__list_item1">Contact Us</div>
-                    <div class="footer__list_item">We’re Always Happy to Help</div>
-                    <div class="footer__email">us@coffeestyle.io</div>
-                    <div class="footer__copyright">Powered by Webflow</div>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
 
 </html>
