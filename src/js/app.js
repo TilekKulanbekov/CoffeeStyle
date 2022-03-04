@@ -4,8 +4,7 @@ let body = document.querySelector('body');
 let link = document.querySelector('.burger__link');
 
 openBtn.addEventListener('click', () => {
-	burger.classList.toggle('active');
-	body.style.overflow = 'hidden';
+  burger.classList.toggle('active');
 });
 
 
@@ -18,24 +17,30 @@ const modalBtn3 = document.getElementById('modalBtn3')
 const modalGoToLoginBtn = document.getElementById('modal-goToLoginBtn')
 const modalGoToRegistrationBtn = document.getElementById('modal-goToRegistrationBtn')
 const closeBtns = document.getElementsByClassName('modal-header-close-btn')
+const tegbody = document.querySelector('body')
 
 modalBtn.addEventListener('click', () => {
   addClass(loginModal)
+  body.style.overflow = 'hidden'
 })
 modalBtn2.addEventListener('click', () => {
   addClass(loginModal)
+  body.style.overflow = 'hidden'
 })
 modalBtn3.addEventListener('click', () => {
   addClass(loginModal)
+  body.style.overflow = 'hidden'
 })
 
 
 document.addEventListener('click', (e) => {
   if (e.target === loginModal) {
     removeClass(loginModal)
+    body.style.overflow = 'auto'
   }
   if (e.target === registrationModal) {
     removeClass(registrationModal)
+    body.style.overflow = 'auto'
   }
 })
 

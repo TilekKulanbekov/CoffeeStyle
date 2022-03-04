@@ -60,5 +60,7 @@
     height: 20px;
   }
   * {
-    scroll-behavior: smooth;
+    scroll-behavior: 5000ms;
+    transition-duration: 5000ms;
+    
   }
