@@ -14,6 +14,7 @@ const loginModal = document.getElementById('modal-login')
 const registrationModal = document.getElementById('modal-registration')
 const modalBtn = document.getElementById('modalBtn')
 const modalBtn2 = document.getElementById('modalBtn2')
+const modalBtn3 = document.getElementById('modalBtn3')
 const modalGoToLoginBtn = document.getElementById('modal-goToLoginBtn')
 const modalGoToRegistrationBtn = document.getElementById('modal-goToRegistrationBtn')
 const closeBtns = document.getElementsByClassName('modal-header-close-btn')
@@ -22,6 +23,9 @@ modalBtn.addEventListener('click', () => {
   addClass(loginModal)
 })
 modalBtn2.addEventListener('click', () => {
+  addClass(loginModal)
+})
+modalBtn3.addEventListener('click', () => {
   addClass(loginModal)
 })
 
