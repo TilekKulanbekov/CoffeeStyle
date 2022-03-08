@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoffeeStile</title>
     <link rel="stylesheet" href="./src/Styles/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -65,7 +66,7 @@
                 </nav>
             </div>
             <div>
-                <div class="home" id="home">
+                <div class="home" id="home" data-aos-duration="1000" data-aos="fade-down">
                     <img class="home__img" src="./src/Images/home/bg.png" alt="bg">
                     <p class="home__text1">Best place to buy design</p>
                     <h1 class="home__title">Coffee Mugs</h1>
@@ -95,12 +96,12 @@
             <div class="container">
                 <p class="subtitle">Featured Mugs</p>
                 <div class="row">
-                    <div>
+                    <div data-aos-duration="1000" data-aos="flip-right">
                         <img class="bigcard__img" src="./src/Images/bigcard/IMAGE1.png" alt="mug">
                         <p class="bigcard__name">Pink Premium Ceramic</p>
                         <p class="bigcard__price">$ 99.00 USD</p>
                     </div>
-                    <div class="wrapper">
+                    <div class="wrapper" data-aos-duration="1000" data-aos="flip-right" data-aos-delay="300">
                         <img class="bigcard__img" src="./src/Images/bigcard/IMAGE2.png" alt="mug">
                         <p class="bigcard__name">Golden Designers Mug</p>
                         <p class="bigcard__price">$50.00 <span>$ 69.00 USD</span></p>
@@ -111,7 +112,7 @@
         <section class="magazine" id="magazine">
             <div class="container">
                 <p class="subtitle">Buy 2 mugs and get a coffee magazine free</p>
-                <div class="magazine__row">
+                <div class="magazine__row" data-aos-duration="2000" data-aos="flip-right">
                     <img class="magazine__img" src="./src/Images/magazine/IMAGE1.png" alt="">
                     <div>
                         <img class="magazine__img1" src="./src/Images/magazine/IMAGE2.png" alt="">
@@ -126,14 +127,14 @@
                 </div>
             </div>
         </section>
-        <section class="bg">
+        <section class="bg" data-aos-duration="1000" data-aos="fade-down">
             <img class="img" src="./src/Images/bg.png" alt="bg2">
         </section>
         <section class="info" id="info">
             <div class="container">
                 <p class="subtitle">Behind the mugs, lifestyle stories</p>
                 <div class="row">
-                    <div class="wrapper">
+                    <div class="wrapper" data-aos-duration="2000" data-aos="flip-right">
                         <img src="./src/Images/info/IMAGE1.png" alt="room" class="info__img">
                         <h2 class="info__title">Health Check: why do I get a headache when I haven’t had my coffee?</h2>
                         <p class="info__desc">It is a paradisematic country, in which roasted parts of sentences fly
@@ -141,14 +142,14 @@
                             your mouth.</p>
                         <p class="info__date">October 9, 2018</p>
                     </div>
-                    <div class="wrapper">
+                    <div class="wrapper" data-aos-duration="2000" data-aos="flip-right" data-aos-delay="300">
                         <img src="./src/Images/info/IMAGE2.png" alt="room" class="info__img">
                         <h2 class="info__title">How long does a cup of coffee keep you awake?</h2>
                         <p class="info__desc">It is a paradisematic country, in which roasted parts. Vel qui et ad
                             voluptatem.</p>
                         <p class="info__date">October 9, 2018</p>
                     </div>
-                    <div class="wrapper">
+                    <div class="wrapper" data-aos-duration="2000" data-aos="flip-right" data-aos-delay="600">
                         <img src="./src/Images/info/IMAGE3.png" alt="room" class="info__img">
                         <h2 class="info__title">Recent research suggests that heavy coffee drinkers may reap health
                             benefits.</h2>
@@ -324,6 +325,10 @@
         }, 5000);
     </script>
      <script src="./src/js/app.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
 </body>
 
 </html>
